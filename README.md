@@ -9,7 +9,7 @@ Gemfile:
 
     group :development do
       gem 'capistrano-bundler'
-      gem 'capistrano-copy-bundle', git: 'git@github.com:apsheronets/capistrano-copy-bundle.git'
+      gem 'capistrano-copy-bundle'
     end
 
 Capfile:
