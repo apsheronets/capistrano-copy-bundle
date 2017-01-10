@@ -19,6 +19,7 @@ Capfile:
 
 config/deploy.rb:
 
+    append :linked_dirs, 'vendor/cache'
     before "bundler:install", "deploy:copy_bundle"
 
 Special thanks
