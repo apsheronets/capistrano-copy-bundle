@@ -15,7 +15,7 @@ Gemfile:
 Capfile:
 
     require 'capistrano/bundler'
-    require 'capistrano3/copybundle
+    require 'capistrano3/copybundle'
 
 config/deploy.rb:
 
