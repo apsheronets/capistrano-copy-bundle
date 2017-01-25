@@ -1,15 +1,17 @@
 module CapistranoCopyBundle
+  class << self
 
-  def CapistranoCopyBundle.tarfile_name
-    "#{fetch(:application)}-bundle.tar.gz"
+    def tarfile_name
+      "#{fetch(:application)}-bundle.tar.gz"
+    end
+
+    def local_tarfile
+      "#{fetch(:tmp_dir)}/#{tarfile_name}"
+    end
+
+    def remote_tarfile
+      "#{fetch(:tmp_dir_remote, fetch(:tmp_dir))}/#{tarfile_name}"
+    end
+
   end
-
-  def CapistranoCopyBundle.local_tarfile
-    "#{fetch(:tmp_dir)}/#{tarfile_name}"
-  end
-
-  def CapistranoCopyBundle.remote_tarfile
-    "#{fetch(:tmp_dir_remote, fetch(:tmp_dir))}/#{tarfile_name}"
-  end
-
 end
