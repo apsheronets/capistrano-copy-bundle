@@ -4,7 +4,7 @@ desc %{execute "bundle package --all" and store to .tar}
 task :make_bundle_package do
   run_locally do
     execute :bundle, "package --all"
-    execute :tar, "-cf #{CapistranoCopyBundle.local_tarfile} vendor/cache/"
+    execute :tar, "-czf #{CapistranoCopyBundle.local_tarfile} vendor/cache/"
   end
 end
 
