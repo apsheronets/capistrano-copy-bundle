@@ -25,7 +25,8 @@ config/deploy.rb:
 Special thanks
 --------------
 
-To [VimpelCom Ltd.](http://komar.bitcheese.net/files/vimpelcom.jpg) whose fucked up intranet inspired me to make this gem.
+To [VimpelCom Ltd.](http://komar.bitcheese.net/files/vimpelcom.jpg)
+Your fucked up intranet inspired me to make this gem.
 
 Feedback
 --------
