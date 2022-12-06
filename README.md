@@ -1,3 +1,5 @@
+This gem allows you to automatically pack all of gems of your project, pack them and transfer directly to the target server. Useful when the target server has no connection to the Internet.
+
 Works with capistrano 3.x. For capistrano 2.x see https://github.com/rudionrails/capistrano-strategy-copy-bundled
 
 You may also like: https://github.com/xuwupeng2000/capistrano-scm-gitcopy
