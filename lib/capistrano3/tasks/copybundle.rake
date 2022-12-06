@@ -1,9 +1,10 @@
 require "capistrano-copy-bundle"
 
-desc %{execute "bundle package --all" and store to .tar}
+desc %{execute "BUNDLE_CACHE_ALL=true bundle cache" and store to .tar.gz}
 task :make_bundle_package do
+  ENV["BUNDLE_CACHE_ALL"] = "true"
   run_locally do
-    execute :bundle, "package --all"
+    execute :bundle, "cache"
     execute :tar, "-czf #{CapistranoCopyBundle.local_tarfile} vendor/cache/"
   end
 end
